@@ -1,0 +1,25 @@
+diff --git a/2021/EventDataDetails.h b/2022/EventDataDetails.h
+index f7c42ef..337d9e3 100755
+--- a/2021/EventDataDetails.h
++++ b/2022/EventDataDetails.h
+@@ -38,13 +38,17 @@ union EventDataDetails
+     {
+         uint8 vehicleIdx;		// Vehicle index of the vehicle triggering speed trap
+         float speed;      		// Top speed achieved in kilometres per hour
+-        uint8 overallFastestInSession;   // Overall fastest speed in session = 1, otherwise 0
+-        uint8 driverFastestInSession;    // Fastest speed for driver in session = 1, otherwise 0
++        uint8 isOverallFastestInSession; // Overall fastest speed in session = 1, otherwise 0
++        uint8 isDriverFastestInSession;  // Fastest speed for driver in session = 1, otherwise 0
++        uint8 fastestVehicleIdxInSession;// Vehicle index of the vehicle that is the fastest
++// in this session
++        float fastestSpeedInSession;      // Speed of the vehicle that is the fastest
++ // in this session
+     } SpeedTrap;
+ 
+     struct
+     {
+-        uint8 numLights;		// Number of lights showing
++        uint8 numLights;			// Number of lights showing
+     } StartLIghts;
+ 
+     struct

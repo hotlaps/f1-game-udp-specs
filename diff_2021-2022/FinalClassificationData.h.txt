@@ -1,0 +1,10 @@
+diff --git a/2021/FinalClassificationData.h b/2022/FinalClassificationData.h
+index eb39704..fe32ccf 100755
+--- a/2021/FinalClassificationData.h
++++ b/2022/FinalClassificationData.h
+@@ -15,4 +15,5 @@ struct FinalClassificationData
+     uint8     m_numTyreStints;         // Number of tyres stints up to maximum
+     uint8     m_tyreStintsActual[8];   // Actual tyres used by this driver
+     uint8     m_tyreStintsVisual[8];   // Visual tyres used by this driver
++    uint8     m_tyreStintsEndLaps[8];  // The lap number stints end on
+ };

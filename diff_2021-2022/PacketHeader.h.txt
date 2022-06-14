@@ -1,0 +1,12 @@
+diff --git a/2021/PacketHeader.h b/2022/PacketHeader.h
+index f8784b7..a26031c 100755
+--- a/2021/PacketHeader.h
++++ b/2022/PacketHeader.h
+@@ -1,6 +1,6 @@
+ struct PacketHeader
+ {
+-    uint16    m_packetFormat;            // 2021
++    uint16    m_packetFormat;            // 2022
+     uint8     m_gameMajorVersion;        // Game major version - "X.00"
+     uint8     m_gameMinorVersion;        // Game minor version - "1.XX"
+     uint8     m_packetVersion;           // Version of this packet type, all start from 1

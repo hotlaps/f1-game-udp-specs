@@ -1,0 +1,19 @@
+diff --git a/2021/CarDamageData.h b/2022/CarDamageData.h
+index 2d207d0..d5c08c1 100755
+--- a/2021/CarDamageData.h
++++ b/2022/CarDamageData.h
+@@ -10,6 +10,7 @@ struct CarDamageData
+     uint8     m_diffuserDamage;                   // Diffuser damage (percentage)
+     uint8     m_sidepodDamage;                    // Sidepod damage (percentage)
+     uint8     m_drsFault;                         // Indicator for DRS fault, 0 = OK, 1 = fault
++    uint8     m_ersFault;                         // Indicator for ERS fault, 0 = OK, 1 = fault
+     uint8     m_gearBoxDamage;                    // Gear box damage (percentage)
+     uint8     m_engineDamage;                     // Engine damage (percentage)
+     uint8     m_engineMGUHWear;                   // Engine wear MGU-H (percentage)
+@@ -18,4 +19,6 @@ struct CarDamageData
+     uint8     m_engineICEWear;                    // Engine wear ICE (percentage)
+     uint8     m_engineMGUKWear;                   // Engine wear MGU-K (percentage)
+     uint8     m_engineTCWear;                     // Engine wear TC (percentage)
++    uint8     m_engineBlown;                      // Engine blown, 0 = OK, 1 = fault
++    uint8     m_engineSeized;                     // Engine seized, 0 = OK, 1 = fault
+ }
