@@ -69,7 +69,7 @@ union EventDataDetails
 
     struct
     {
-        uint32 buttonStatus;              // Bit flags specifying which buttons are being pressed
+        uint32         m_buttonStatus;    // Bit flags specifying which buttons are being pressed
                                           // currently - see appendices
     } Buttons;
 
@@ -78,13 +78,4 @@ union EventDataDetails
         uint8 overtakingVehicleIdx;       // Vehicle index of the vehicle overtaking
         uint8 beingOvertakenVehicleIdx;   // Vehicle index of the vehicle being overtaken
     } Overtake;
-};
-
-struct PacketEventData
-{
-    PacketHeader    	m_header;               	// Header
-    
-    uint8           	m_eventStringCode[4];   	// Event string code, see below
-    EventDataDetails	m_eventDetails;         	// Event details - should be interpreted differently
-                                                 // for each type
 };

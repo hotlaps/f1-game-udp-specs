@@ -1,0 +1,11 @@
+diff --git a/2022/PacketEventData.h b/2023/PacketEventData.h
+index 401d83b..1579992 100755
+--- a/2022/PacketEventData.h
++++ b/2023/PacketEventData.h
+@@ -5,4 +5,4 @@ struct PacketEventData
+     uint8           	m_eventStringCode[4];   	// Event string code, see below
+     EventDataDetails	m_eventDetails;         	// Event details - should be interpreted differently
+                                                  // for each type
+-};
++};
+\ No newline at end of file
