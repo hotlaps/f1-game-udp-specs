@@ -1,0 +1,28 @@
+diff --git a/2022/EventDataDetails.h b/2023/EventDataDetails.h
+index 337d9e3..6361fc4 100755
+--- a/2022/EventDataDetails.h
++++ b/2023/EventDataDetails.h
+@@ -69,7 +69,22 @@ union EventDataDetails
+ 
+     struct
+     {
+-        uint32         m_buttonStatus;    // Bit flags specifying which buttons are being pressed
++        uint32 buttonStatus;              // Bit flags specifying which buttons are being pressed
+                                           // currently - see appendices
+     } Buttons;
++
++    struct
++    {
++        uint8 overtakingVehicleIdx;       // Vehicle index of the vehicle overtaking
++        uint8 beingOvertakenVehicleIdx;   // Vehicle index of the vehicle being overtaken
++    } Overtake;
++};
++
++struct PacketEventData
++{
++    PacketHeader    	m_header;               	// Header
++    
++    uint8           	m_eventStringCode[4];   	// Event string code, see below
++    EventDataDetails	m_eventDetails;         	// Event details - should be interpreted differently
++                                                 // for each type
+ };

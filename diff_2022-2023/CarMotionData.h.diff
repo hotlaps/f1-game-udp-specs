@@ -1,0 +1,16 @@
+diff --git a/2022/CarMotionData.h b/2023/CarMotionData.h
+index 9393f05..57ff7ac 100755
+--- a/2022/CarMotionData.h
++++ b/2023/CarMotionData.h
+@@ -1,9 +1,9 @@
+ struct CarMotionData
+ {
+-    float         m_worldPositionX;           // World space X position
++    float         m_worldPositionX;           // World space X position - metres
+     float         m_worldPositionY;           // World space Y position
+     float         m_worldPositionZ;           // World space Z position
+-    float         m_worldVelocityX;           // Velocity in world space X
++    float         m_worldVelocityX;           // Velocity in world space X – metres/s
+     float         m_worldVelocityY;           // Velocity in world space Y
+     float         m_worldVelocityZ;           // Velocity in world space Z
+     int16         m_worldForwardDirX;         // World space forward X direction (normalised)

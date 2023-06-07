@@ -1,0 +1,24 @@
+diff --git a/2022/CarStatusData.h b/2023/CarStatusData.h
+index 965cb0b..7bd8fe3 100755
+--- a/2022/CarStatusData.h
++++ b/2023/CarStatusData.h
+@@ -15,7 +15,7 @@ struct CarStatusData
+     uint16      m_drsActivationDistance;    // 0 = DRS not available, non-zero - DRS will be available
+                                             // in [X] metres
+     uint8       m_actualTyreCompound;	   // F1 Modern - 16 = C5, 17 = C4, 18 = C3, 19 = C2, 20 = C1
+-   					   // 7 = inter, 8 = wet
++   					   // 21 = C0, 7 = inter, 8 = wet
+    					   // F1 Classic - 9 = dry, 10 = wet
+    					   // F2 – 11 = super soft, 12 = soft, 13 = medium, 14 = hard
+    					   // 15 = wet
+@@ -26,7 +26,9 @@ struct CarStatusData
+                                             // 21 = medium , 22 = hard
+     uint8       m_tyresAgeLaps;             // Age in laps of the current set of tyres
+     int8        m_vehicleFiaFlags;	   // -1 = invalid/unknown, 0 = none, 1 = green
+-                                            // 2 = blue, 3 = yellow, 4 = red
++                                            // 2 = blue, 3 = yellow
++    float       m_enginePowerICE;           // Engine power output of ICE (W)
++    float       m_enginePowerMGUK;          // Engine power output of MGU-K (W)
+     float       m_ersStoreEnergy;           // ERS energy store in Joules
+     uint8       m_ersDeployMode;            // ERS deployment mode, 0 = none, 1 = medium
+    					   // 2 = hotlap, 3 = overtake

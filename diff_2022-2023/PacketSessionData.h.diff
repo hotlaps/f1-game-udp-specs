@@ -1,0 +1,16 @@
+diff --git a/2022/PacketSessionData.h b/2023/PacketSessionData.h
+index 84f673d..8d08fe4 100755
+--- a/2022/PacketSessionData.h
++++ b/2023/PacketSessionData.h
+@@ -51,4 +51,11 @@ struct PacketSessionData
+     uint32          m_timeOfDay;                 // Local time of day - minutes since midnight
+     uint8           m_sessionLength;             // 0 = None, 2 = Very Short, 3 = Short, 4 = Medium
+ // 5 = Medium Long, 6 = Long, 7 = Full
++    uint8           m_speedUnitsLeadPlayer;             // 0 = MPH, 1 = KPH
++    uint8           m_temperatureUnitsLeadPlayer;       // 0 = Celsius, 1 = Fahrenheit
++    uint8           m_speedUnitsSecondaryPlayer;        // 0 = MPH, 1 = KPH
++    uint8           m_temperatureUnitsSecondaryPlayer;  // 0 = Celsius, 1 = Fahrenheit
++    uint8           m_numSafetyCarPeriods;              // Number of safety cars called during session
++    uint8           m_numVirtualSafetyCarPeriods;       // Number of virtual safety cars called
++    uint8           m_numRedFlagPeriods;                // Number of red flags called during session
+ };
