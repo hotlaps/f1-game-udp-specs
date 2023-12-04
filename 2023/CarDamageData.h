@@ -21,4 +21,4 @@ struct CarDamageData
     uint8     m_engineTCWear;                     // Engine wear TC (percentage)
     uint8     m_engineBlown;                      // Engine blown, 0 = OK, 1 = fault
     uint8     m_engineSeized;                     // Engine seized, 0 = OK, 1 = fault
-}
+};
